@@ -25,7 +25,7 @@ supported.versions=6.0 - 7.1.2
 supported.patchlevels=2019-07 -
 supported.vendorpatchlevels=2013-07
 
-BLOCK=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
+BLOCK=/dev/block/by-name/boot;
 IS_SLOT_DEVICE=0;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
