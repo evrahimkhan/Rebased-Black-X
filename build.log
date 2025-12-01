@@ -1,0 +1,66 @@
+Build started at: 2025-12-01 16:26:08
+Device: POCO X5 5G (moonstone) (stone)
+Kernel: Rebased-Black
+Defconfig: stone_defconfig
+Build Type: RELEASE
+Architecture: 
+OS: Kali GNU/Linux Rolling
+CPU Cores: 4
+Total Memory: 7.7Gi
+[STATUS:DEPENDENCY_CHECK] Starting dependency check process
+[STATUS] Checking dependencies...
+[PACKAGE:package_lists] [STATUS:Defined package lists for all supported distributions]
+[STATUS] Detected Debian/Ubuntu-based system
+[PACKAGE:package_manager] [STATUS:Detected package manager: apt-get]
+[PACKAGE:total_packages] [STATUS:Total packages to check: 16]
+[PACKAGE:build-essential] [STATUS:INSTALLED]
+[PACKAGE:libncurses-dev] [STATUS:MISSING]
+[PACKAGE:flex] [STATUS:INSTALLED]
+[PACKAGE:bison] [STATUS:INSTALLED]
+[PACKAGE:libssl-dev] [STATUS:MISSING]
+[PACKAGE:bc] [STATUS:INSTALLED]
+[PACKAGE:curl] [STATUS:INSTALLED]
+[PACKAGE:wget] [STATUS:INSTALLED]
+[PACKAGE:unzip] [STATUS:INSTALLED]
+[PACKAGE:zip] [STATUS:INSTALLED]
+[PACKAGE:git] [STATUS:INSTALLED]
+[PACKAGE:llvm] [STATUS:INSTALLED]
+[PACKAGE:clang] [STATUS:INSTALLED]
+[PACKAGE:lld] [STATUS:MISSING]
+[PACKAGE:gcc-aarch64-linux-gnu] [STATUS:INSTALLED]
+[PACKAGE:gcc-arm-linux-gnueabi] [STATUS:INSTALLED]
+[PACKAGE:summary] [STATUS:Found 3 missing packages out of 16 total]
+[STATUS] Installing 3 missing packages: libncurses-dev libssl-dev lld
+[PACKAGE:apt_update] [STATUS:Running apt-get update]
+[STATUS] APT packages installed successfully
+[PACKAGE:apt_install] [STATUS:SUCCESS: Installed 3 packages]
+[STATUS] Checking for required build tools...
+[PACKAGE:tool:make] [STATUS:FOUND]
+[PACKAGE:tool:gcc] [STATUS:FOUND]
+[PACKAGE:tool:clang] [STATUS:FOUND]
+[PACKAGE:tool:ld.lld] [STATUS:FOUND]
+[PACKAGE:tool:llvm-ar] [STATUS:FOUND]
+[PACKAGE:tool:llvm-nm] [STATUS:FOUND]
+[PACKAGE:tool:llvm-objcopy] [STATUS:FOUND]
+[PACKAGE:tool:llvm-strip] [STATUS:FOUND]
+[PACKAGE:tool:aarch64-linux-gnu-gcc] [STATUS:FOUND]
+[PACKAGE:tool:arm-linux-gnueabi-gcc] [STATUS:FOUND]
+[PACKAGE:tools_summary] [STATUS:Found 10/10 tools available, 0 missing]
+[STATUS] All 10 required build tools are available
+[STATUS] Dependency check completed successfully!
+[STATUS:DEPENDENCY_CHECK] Dependency check completed successfully
+[STATUS] Compiler: Debian clang version 19.1.7 (18)
+[STATUS] Clang version 19 is adequate for kernel compilation
+[STATUS] Building kernel for POCO X5 5G (moonstone) (stone)...
+[STATUS] Configuring kernel with stone_defconfig...
+[STATUS] Running non-interactive configuration...
+[STATUS] Generating OID registry data...
+[STATUS] OID registry data generated successfully.
+[STATUS] Preparing kernel compilation environment...
+[STATUS] Starting kernel compilation with 4 CPU cores...
+[STATUS] Kernel Image compilation successful! (Duration: 2436s)
+[STATUS] Kernel compilation completed successfully!
+[STATUS] Packaging kernel...
+[STATUS] Using static AnyKernel directory directly...
+[STATUS] Copied Image to AnyKernel directory
+[STATUS] Flashable zip created in project root directory: Rebased-Black-stone-20251201.zip

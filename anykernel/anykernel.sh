@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=POCO X5 5G
+kernel.string=POCO X5 5G (moonstone)
 do.devicecheck=0
 do.modules=0
 do.systemless=1
